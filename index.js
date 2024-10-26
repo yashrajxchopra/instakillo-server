@@ -198,7 +198,7 @@ app.post(
       }
       const { caption } = req.body;
       const imagePath = req.file
-        ? path.join("../../../Server/uploads", req.file.filename)
+        ? path.join("../../../Server/uploads\\", req.file.filename)
         : null;
       const newPost = new Post({
         caption: caption,
